@@ -1,8 +1,5 @@
 { pkgs, ... }: {
 
-  home.file.".config/git/allowed_signers".text = ''
-  '';
-
   home.packages = with pkgs; [ gh ];
 
   programs = {
