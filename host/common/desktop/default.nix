@@ -5,9 +5,9 @@ in
 {
   imports = [
     (./. + "/${desktop}.nix")
-    ../hardware/yubikey.nix
+#    ../hardware/yubikey.nix
     ../services/pipewire.nix
-    ../virt
+#    ../virt
   ];
 
   # Enable Plymouth and surpress some logs by default.

@@ -14,19 +14,32 @@
     ../services/avahi.nix
     ../services/firewall.nix
     ../services/openssh.nix
-    ../services/tailscale.nix
+#    ../services/tailscale.nix
   ];
 
   networking = {
+  	defaultGateway = "192.168.68.1";
+  	nameservers = [
+  		"1.1.1.1"
+  		"1.0.0.1"
+  	];
     hostName = hostname;
     useDHCP = lib.mkDefault true;
+    networkmanager.enable = true;
+    interfaces = {
+    	"wlp59s0" = {
+    		ipv4.adresses = [ {
+    			address = "192.168.68.116";
+    			prefixLength = 24;
+    		}];
+    	};
+    }; 
   };
 
   environment.systemPackages = (import ./packages.nix { inherit pkgs; }).basePackages;
 
   programs = {
     zsh.enable = true;
-    _1password.enable = true;
   };
 
   services = {

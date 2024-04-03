@@ -1,21 +1,24 @@
 _: {
-  time.timeZone = "Europe/London";
+  time.timeZone = "Europe/Brussels";
 
-  console.keyMap = "uk";
-  services.xserver.layout = "gb";
+  console.keyMap = "us-acentos"; 
+  services.xserver = {
+  	layout = "us";
+  	xkbVariant = "intl";
+  };
 
   i18n = {
-    defaultLocale = "en_GB.utf8";
+    defaultLocale = "en_US.UTF-8";
     extraLocaleSettings = {
-      LC_ADDRESS = "en_GB.utf8";
-      LC_IDENTIFICATION = "en_GB.utf8";
-      LC_MEASUREMENT = "en_GB.utf8";
-      LC_MONETARY = "en_GB.utf8";
-      LC_NAME = "en_GB.utf8";
-      LC_NUMERIC = "en_GB.utf8";
-      LC_PAPER = "en_GB.utf8";
-      LC_TELEPHONE = "en_GB.utf8";
-      LC_TIME = "en_GB.utf8";
+      LC_ADDRESS = "nl_BE.UTF-8";
+      LC_IDENTIFICATION = "nl_BE.UTF-8";
+      LC_MEASUREMENT = "nl_BE.UTF-8";
+      LC_MONETARY = "nl_BE.UTF-8";
+      LC_NAME = "nl_BE.UTF-8";
+      LC_NUMERIC = "nl_BE.UTF-8";
+      LC_PAPER = "nl_BE.UTF-8";
+      LC_TELEPHONE = "nl_BE.UTF-8";
+      LC_TIME = "nl_BE.UTF-8";
     };
   };
 }
