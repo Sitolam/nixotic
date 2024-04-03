@@ -7,7 +7,7 @@ in
   inherit (libx) hexToRgb;
   inherit colours;
 
-  wallpaper = if hostname == "kara" then ./wallpapers/mountains.png else ./wallpapers/jokulsarlon.png;
+  wallpaper = if hostname == "ultra-wide" then ./wallpapers/mountains.png else ./wallpapers/space-clouds.png;
 
   gtkTheme = {
     name = "Catppuccin-Macchiato-Standard-Blue-Dark";

@@ -6,8 +6,11 @@ _: {
     ];
   };
 
-  freyja = {
+  nixotic = {
     workspace = [ ];
-    monitor = [ "eDP-1, preferred, auto, 1.5" ];
+    monitor = [ 
+    	"eDP-1, preferred, 1920x0, 1, transform, 1 ",
+    	"DP-1, preferred, 0x0, 1" 
+    ];
   };
 }

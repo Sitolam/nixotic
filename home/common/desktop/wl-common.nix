@@ -6,8 +6,8 @@
 
     wlsunset = {
       enable = true;
-      latitude = "51.51";
-      longitude = "-2.53";
+      latitude = "51.19";
+      longitude = "3.57";
     };
   };
 

@@ -2,7 +2,7 @@
 let
   # If this is a laptop, then include network/battery controls
   modules =
-    if hostname == "freyja" then [
+    if hostname == "nixotic" then [
       "network"
       "battery"
       "wireplumber"
@@ -46,7 +46,7 @@ in
       position = "top";
       layer = "top";
       height = 18;
-      width = if hostname == "kara" then 2560 else null;
+      width = if hostname == "ultra_wide" then 2560 else null;
       passthrough = false;
       gtk-layer-shell = true;
 
