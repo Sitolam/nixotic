@@ -58,29 +58,7 @@
         htop = "btm -b";
         neofetch = "fastfetch";
 
-        tf = "terraform";
-        tfi = "terraform init";
-        tfp = "terraform plan";
-        tfa = "terraform apply -auto-approve";
-        tfd = "terraform destroy -auto-approve";
-        tfo = "terraform output -json";
-
-        wgu = "sudo wg-quick up";
-        wgd = "sudo wg-quick down";
-
-        ts = "tailscale";
-        tssh = "tailscale ssh";
-        tst = "tailscale status";
-        tsu = "tailscale up --ssh --operator=$USER";
-        tsd = "tailscale down";
-
-        js = "juju status";
-        jsw = "juju status --watch 1s --color";
-        jsrw = "juju status --watch 1s --color --relations";
-        jdl = "juju debug-log";
-
         open = "xdg-open";
-        k = "kubectl";
 
         opget = "op item get \"$(op item list --format=json | jq -r '.[].title' | fzf)\"";
 

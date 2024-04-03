@@ -6,7 +6,6 @@
     ./bottom.nix
     ./fzf.nix
     ./git.nix
-    ./helix.nix
     ./fastfetch.nix
     ./starship.nix
     ./tmux.nix
@@ -18,15 +17,15 @@
   programs = {
     eza.enable = true;
     git.enable = true;
-    gpg.enable = true;
+#   gpg.enable = true;
     home-manager.enable = true;
-    jq.enable = true;
+#   jq.enable = true;
   };
 
-  services.gpg-agent = {
-    enable = true;
-    pinentryPackage = pkgs.pinentry-curses;
-  };
+# services.gpg-agent = {
+#   enable = true;
+#   pinentryPackage = pkgs.pinentry-curses;
+# };
 
   home.packages = with pkgs; [ ];
 }
