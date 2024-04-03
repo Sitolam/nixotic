@@ -28,7 +28,7 @@
     networkmanager.enable = true;
     interfaces = {
     	"wlp59s0" = {
-    		ipv4.adresses = [ {
+    		ipv4.addresses = [ {
     			address = "192.168.68.116";
     			prefixLength = 24;
     		}];
