@@ -14,6 +14,7 @@ let
       "wireplumber"
       "pulseaudio#source"
       "bluetooth"
+      "tray"
       "group/group-power"
     ];
 
@@ -67,14 +68,13 @@ in
         };
         on-click = "activate";
       };
-
+      
       "network" = {
         format-wifi = "{essid} ";
         format-ethernet = "{ifname} ";
         format-disconnected = "";
         tooltip-format = "{ifname} / {essid} ({signalStrength}%) / {ipaddr}";
         max-length = 15;
-        on-click = "${pkgs.alacritty}/bin/alacritty -e ${pkgs.networkmanager}/bin/nmtui";
       };
 
       "idle_inhibitor" = {
@@ -164,6 +164,12 @@ in
         on-click-right = "${lib.getExe' pkgs.blueberry "blueberry"}";
         on-click = "${lib.getExe bluetoothToggle}";
       };
+
+      "tray" = {
+        icon-size = 18;
+        rotate = 0;
+        spacing = 5;
+      };  
     }];
 
     # This is a bit of a hack. Rasi turns out to be basically CSS, and there is
