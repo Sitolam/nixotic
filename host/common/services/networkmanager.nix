@@ -8,7 +8,7 @@
     networkmanager = {
       enable = true;
     };
-    hostName = hosname;
+    hostName = hostname;
     useDHCP = lib.mkDefault true;
 
   };
