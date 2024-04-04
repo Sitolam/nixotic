@@ -17,15 +17,15 @@
 #    ../services/tailscale.nix
   ];
 
-  networking = {
+#  networking = {
 #  	defaultGateway = "192.168.68.1";
 #  	nameservers = [
 #  		"1.1.1.1"
 #  		"1.0.0.1"
 #  	];
-    hostName = hostname;
-    useDHCP = lib.mkDefault true;
-    networkmanager.enable = true;
+#   hostName = hostname;
+#   useDHCP = lib.mkDefault true;
+#   networkmanager.enable = true;
 #    interfaces = {
 #    	"wlp59s0" = {
 #    		ipv4.addresses = [ {
@@ -34,7 +34,7 @@
 #    		}];
 #    	};
 #   }; 
-  };
+# };
 
   environment.systemPackages = (import ./packages.nix { inherit pkgs; }).basePackages;
 

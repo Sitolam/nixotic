@@ -1,12 +1,16 @@
-_:
-{
+{ hostname
+, pkgs
+, lib
+, username
+, ...
+}: {
   networking = {
     networkmanager = {
       enable = true;
-      wifi = {
-        backend = "iwd";
-      };
     };
+    hostName = hosname;
+    useDHCP = lib.mkDefault true;
+
   };
 
   # Workaround https://github.com/NixOS/nixpkgs/issues/180175
