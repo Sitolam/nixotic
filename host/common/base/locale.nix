@@ -1,7 +1,7 @@
 _: {
   time.timeZone = "Europe/Brussels";
 
-  console.keyMap = "us-acentos"; 
+  console.keyMap = "us"; 
   services.xserver = {
   	layout = "us";
   	xkbVariant = "intl";
